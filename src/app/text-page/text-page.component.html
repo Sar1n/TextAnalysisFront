@@ -1,0 +1,23 @@
+<div class="card mx-5 mt-5">
+    <div class="card-header text-center">
+        <h3>Text</h3>
+        <a>You can input any amount of text.</a>
+        <a><br>Recognizable alphabets are English, Ukrainian, Russian.</a>
+        <a><br>English letter "y" considered as vowel.</a>
+    </div>
+    <div class="card-body">
+        <textarea class="form-control" aria-label="With textarea" [(ngModel)]="text"></textarea>
+    </div>
+    <div class="card-footer text-center">
+        <button class="btn btn-secondary" (click)="AnaliseClick()">Analise</button>
+    </div>
+</div>
+
+<div class="card mx-5 mt-5">
+    <div class="card-header">Metrix</div>
+    <div class="card-body">
+        <div *ngFor="let metric of metrics">
+            <p class="text-left">{{metric.Metric}} - {{metric.Value}}</p>
+        </div>
+    </div>
+</div>
