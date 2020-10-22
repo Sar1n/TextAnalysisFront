@@ -18,9 +18,9 @@ export class TextPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  AnaliseClick()
+  AnalyzeClick()
   {
-    this.sendtextService.AnaliseText(this.text).subscribe( data => { this.metrics = data; console.log(data); } );
+    this.sendtextService.AnalyzeText(this.text).subscribe( data => { this.metrics = data; console.log(data); } );
     //console.log(this.text);
   }
 
