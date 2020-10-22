@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SendtextService } from '../sendtext.service';
-import { Metric, MetricAdapter } from "./metric.model";
+import { Metric, MetricAdapter } from "../metric.model";
 
 @Component({
   selector: 'app-text-page',
